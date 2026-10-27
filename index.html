@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pureart2000Gamer — The Arena | Watch, Sponsors & Website Upgrades</title>
+<meta name="description" content="Daily Street Fighter fights, Fallout streams and wasteland runs. Sponsor the Arena or level up your own website with Pureart2000.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#090914; color:#fff; font-family:'Segoe UI', Arial, sans-serif; }
+  a { text-decoration:none; }
+  .wrap { max-width:1440px; margin:0 auto; padding:0 48px; }
+  /* Top bar */
+  .topbar { display:flex; align-items:center; justify-content:space-between; padding:18px 48px; background:#0d0c1a; position:sticky; top:0; z-index:10; }
+  .logo { font-size:24px; font-weight:800; letter-spacing:.5px; }
+  .logo span { color:#f5c518; }
+  .nav a { color:#b3b3c9; margin:0 14px; font-size:15px; }
+  .nav a:hover { color:#fff; }
+  .btn-live { background:#f5c518; color:#0d0c1a; font-weight:700; padding:12px 26px; border-radius:24px; font-size:15px; }
+  /* Hero */
+  .hero { position:relative; border-radius:24px; overflow:hidden; margin-top:28px; }
+  .hero img.bg { width:100%; height:470px; object-fit:cover; display:block; }
+  .hero .shade { position:absolute; inset:0; background:linear-gradient(100deg, rgba(46,16,101,.93) 30%, rgba(9,9,20,.55)); }
+  .hero .content { position:absolute; inset:0; padding:56px 48px; display:flex; flex-direction:column; justify-content:center; }
+  .hero h1 { font-size:64px; font-weight:800; line-height:1.05; }
+  .hero h1 .gold { color:#f5c518; display:block; }
+  .hero p { margin-top:18px; font-size:19px; color:#e3e3ee; max-width:600px; line-height:1.5; }
+  .cta-row { display:flex; gap:20px; margin-top:34px; }
+  .btn-gold { background:#f5c518; color:#0d0c1a; font-weight:700; padding:14px 30px; border-radius:24px; font-size:15px; }
+  .btn-outline { border:2px solid #6d28d9; color:#fff; font-weight:700; padding:14px 30px; border-radius:24px; font-size:15px; }
+  /* Sections */
+  h2.sec { font-size:32px; font-weight:800; margin:64px 0 6px; }
+  .rule { width:64px; height:5px; background:#f5c518; border-radius:3px; margin-bottom:26px; }
+  .sub { color:#b3b3c9; font-size:17px; margin:-14px 0 26px; max-width:900px; line-height:1.5; }
+  /* Video cards */
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+  .card { background:#16132a; border-radius:16px; overflow:hidden; }
+  .card .thumb { position:relative; }
+  .card .thumb img { width:100%; height:176px; object-fit:cover; display:block; }
+  .card .play { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:56px; height:56px; background:rgba(255,255,255,.92); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#6d28d9; font-size:20px; }
+  .card h3 { font-size:16px; padding:16px 16px 6px; line-height:1.35; }
+  .card p { color:#b3b3c9; font-size:13px; padding:0 16px 18px; }
+  /* Blog rows */
+  .post { display:flex; align-items:center; background:#16132a; border-radius:14px; padding:28px 32px; margin-bottom:16px; }
+  .post .date { color:#f5c518; font-weight:700; font-size:14px; width:110px; flex-shrink:0; }
+  .post h3 { font-size:18px; flex:1; }
+  .post .read { color:#8b5cf6; font-weight:700; font-size:15px; white-space:nowrap; }
+  /* Sponsor + services */
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .tier { background:#16132a; border-radius:18px; padding:30px 28px 34px; border-top:6px solid #6d28d9; display:flex; flex-direction:column; }
+  .tier.featured { background:#211d3d; border-top-color:#f5c518; }
+  .tier .name { color:#f5c518; font-weight:700; font-size:15px; letter-spacing:1px; }
+  .tier .price { font-size:40px; font-weight:800; margin:10px 0 14px; }
+  .tier p { color:#b3b3c9; font-size:15px; line-height:1.55; flex:1; }
+  .tier .btn { margin-top:26px; text-align:center; font-weight:700; font-size:13px; padding:13px 0; border-radius:22px; background:#6d28d9; color:#fff; letter-spacing:.5px; }
+  .tier.featured .btn { background:#f5c518; color:#0d0c1a; }
+  .svc .price { font-size:36px; }
+  .svc .once { color:#b3b3c9; font-size:13px; margin-top:-8px; }
+  .svc .go { color:#8b5cf6; font-weight:700; font-size:15px; margin-top:20px; display:inline-block; }
+  .fine { color:#b3b3c9; font-size:15px; margin-top:22px; }
+  /* Footer */
+  footer { border-top:2px solid #35324d; margin-top:72px; padding:26px 48px 40px; display:flex; justify-content:space-between; color:#b3b3c9; font-size:15px; }
+  footer .credit { color:#f5c518; font-weight:700; }
+  @media (max-width:1000px){ .grid4{grid-template-columns:repeat(2,1fr);} .grid3{grid-template-columns:1fr;} .hero h1{font-size:42px;} .wrap{padding:0 20px;} .topbar{padding:14px 20px;} .nav{display:none;} }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="logo">PUREART2000 <span>GAMER</span></div>
+  <div class="nav">
+    <a href="#videos">Videos</a><a href="#blog">Posts</a><a href="#sponsors">Sponsors</a><a href="#services">Website Upgrades</a>
+  </div>
+  <a class="btn-live" href="https://www.twitch.tv/pureart2000" target="_blank" rel="noopener">WATCH LIVE</a>
+</div>
+
+<div class="wrap">
+  <div class="hero">
+    <img class="bg" src="https://i.ytimg.com/vi/1GgPlZDgCwg/maxresdefault.jpg" alt="Street Fighter 6 gameplay">
+    <div class="shade"></div>
+    <div class="content">
+      <h1>WATCH. PLAY.<span class="gold">LEVEL UP.</span></h1>
+      <p>Daily Street Fighter fights, Fallout streams and wasteland runs — plus the stories behind the clips. New videos every week.</p>
+      <div class="cta-row">
+        <a class="btn-gold" href="https://www.youtube.com/@pureart2000gamer" target="_blank" rel="noopener">WATCH ON YOUTUBE</a>
+        <a class="btn-outline" href="https://www.twitch.tv/pureart2000" target="_blank" rel="noopener">FOLLOW ON TWITCH</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sec" id="videos">LATEST VIDEOS</h2>
+  <div class="rule"></div>
+  <div class="grid4">
+    <a class="card" href="https://www.youtube.com/shorts/iFI1dBSuNnQ" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://i.ytimg.com/vi/iFI1dBSuNnQ/hqdefault.jpg" alt="Birdie vs Poison"><div class="play">▶</div></div>
+      <h3>POISON WHIPPED ME — Birdie Gets Destroyed | Street Fighter V</h3><p>YouTube Short · Street Fighter V</p>
+    </a>
+    <a class="card" href="https://www.youtube.com/watch?v=jctZrZk3p8k" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://i.ytimg.com/vi/jctZrZk3p8k/hqdefault.jpg" alt="Kimberly vs Mai"><div class="play">▶</div></div>
+      <h3>Kimberly vs Mai — Served at the Pao Pao Cafe! | SF6 Stage 10</h3><p>Street Fighter 6 · PS5 Gameplay</p>
+    </a>
+    <a class="card" href="https://www.youtube.com/shorts/kOwJb4dH2w8" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://i.ytimg.com/vi/kOwJb4dH2w8/hqdefault.jpg" alt="Nyx reveal"><div class="play">▶</div></div>
+      <h3>NYX — Original Character Reveal</h3><p>Original IP · Character Drop</p>
+    </a>
+    <a class="card" href="https://www.youtube.com/watch?v=WlWBr1P5nnQ" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://i.ytimg.com/vi/WlWBr1P5nnQ/hqdefault.jpg" alt="Stream promo"><div class="play">▶</div></div>
+      <h3>Streaming Now — Live on Twitch</h3><p>Stream · Pureart2000Gamer</p>
+    </a>
+  </div>
+
+  <h2 class="sec" id="blog">FROM THE BLOG</h2>
+  <div class="rule"></div>
+  <a class="post" href="https://pureart2000gamer.wordpress.com/2026/10/26/%f0%9f%94%b4-live-now-fallout-shelter-lose-your-head-quests-chat-trivia/" target="_blank" rel="noopener">
+    <div class="date">OCT 26</div><h3>Fallout Shelter — Lose Your Head Quests + Chat Trivia! (LIVE NOW)</h3><div class="read">Read the post →</div>
+  </a>
+  <a class="post" href="https://pureart2000gamer.wordpress.com/2026/10/22/gta-6-everything-confirmed-so-far-release-date-lucia-jason-and-the-return-to-leonida/" target="_blank" rel="noopener">
+    <div class="date">OCT 22</div><h3>GTA 6: Everything Confirmed So Far — Lucia &amp; Jason Return to Leonida</h3><div class="read">Read the post →</div>
+  </a>
+  <a class="post" href="https://pureart2000gamer.wordpress.com/2026/10/17/pureart2000-gamer-newsletter-1-gta-6-month-zelda-returns-and-the-holiday-release-rush/" target="_blank" rel="noopener">
+    <div class="date">OCT 17</div><h3>Pureart2000 Gamer Newsletter #1 — GTA 6 Month &amp; the Holiday Release Rush</h3><div class="read">Read the post →</div>
+  </a>
+
+  <h2 class="sec" id="sponsors">SPONSOR THE ARENA</h2>
+  <div class="rule"></div>
+  <p class="sub">Put your brand in front of the Pureart2000Gamer audience — on the page, in the videos, and on stream nights.</p>
+  <div class="grid3">
+    <div class="tier featured">
+      <div class="name">VIDEO PLACEMENT</div>
+      <div class="price">$9.99/mo</div>
+      <p>FOUNDING RATE — join by Dec 30, 2026 and keep this price locked while you stay subscribed. Your promo video featured here and on the Video Hub, plus your own promo page with your buy link.</p>
+      <a class="btn" href="mailto:pureart2000llc@gmail.com?subject=Video%20Placement%20Sponsor">CLAIM THIS SPOT</a>
+    </div>
+    <div class="tier">
+      <div class="name">FEATURED SPONSOR</div>
+      <div class="price">RESERVE</div>
+      <p>Your logo in the hero and shoutouts across streams and fight cards. Founding sponsors get first pick of placements before public launch.</p>
+      <a class="btn" href="mailto:pureart2000llc@gmail.com?subject=Featured%20Sponsor">RESERVE YOUR SPOT</a>
+    </div>
+    <div class="tier">
+      <div class="name">POST SPONSOR</div>
+      <div class="price">RESERVE</div>
+      <p>Sponsor a blog post, a fight card, or a full stream night. Your brand woven into the content the audience actually watches.</p>
+      <a class="btn" href="mailto:pureart2000llc@gmail.com?subject=Post%20Sponsor">RESERVE YOUR SPOT</a>
+    </div>
+  </div>
+  <p class="fine">Sponsor inquiries: pureart2000llc@gmail.com</p>
+
+  <h2 class="sec" id="services">LEVEL UP YOUR WEBSITE</h2>
+  <div class="rule"></div>
+  <p class="sub">Your site could look like this page. Website upgrades by Pureart2000 — design, build and launch, fully remote.</p>
+  <div class="grid4">
+    <div class="tier svc">
+      <div class="name">STARTER SITE</div>
+      <div class="price">$390</div><div class="once">one-time</div>
+      <p>A sharp one-page site that makes your brand look pro. Perfect first home on the web.</p>
+      <a class="go" href="mailto:pureart2000llc@gmail.com?subject=Starter%20Site%20Upgrade">Start your upgrade →</a>
+    </div>
+    <div class="tier svc">
+      <div class="name">BUSINESS SITE</div>
+      <div class="price">$690</div><div class="once">one-time</div>
+      <p>Multi-page site with your services, story and contact flow — built to convert visitors.</p>
+      <a class="go" href="mailto:pureart2000llc@gmail.com?subject=Business%20Site%20Upgrade">Start your upgrade →</a>
+    </div>
+    <div class="tier svc">
+      <div class="name">PRO + STORE</div>
+      <div class="price">$1,390</div><div class="once">one-time</div>
+      <p>Everything in Business, plus a store setup so you can sell products and downloads.</p>
+      <a class="go" href="mailto:pureart2000llc@gmail.com?subject=Pro%20Store%20Upgrade">Start your upgrade →</a>
+    </div>
+    <div class="tier svc">
+      <div class="name">PREMIUM BUILD</div>
+      <div class="price">$1,399</div><div class="once">one-time</div>
+      <p>The full treatment: custom design, store, and launch polish for a serious debut.</p>
+      <a class="go" href="mailto:pureart2000llc@gmail.com?subject=Premium%20Build">Start your upgrade →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>Twitch · YouTube · Instagram · Threads · TikTok — @pureart2000gamer</div>
+  <div class="credit">Created by Pureart2000Gamer</div>
+</footer>
+</body>
+</html>
